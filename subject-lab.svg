@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#0a1923"/>
+  <text x="28" y="36" fill="#4ae5bb" font-family="monospace" font-size="14">HOME_LAB // 02</text>
+  <rect x="90" y="90" width="620" height="250" rx="10" fill="#02100f" stroke="#4ae5bb" stroke-opacity=".4"/>
+  <text x="120" y="150" fill="#93a7b3" font-family="monospace" font-size="18">$ monitor --lab</text>
+  <text x="120" y="190" fill="#4ae5bb" font-family="monospace" font-size="18">[ ok ] isolated environment</text>
+  <text x="120" y="230" fill="#93a7b3" font-family="monospace" font-size="18">[ .. ] analysing events</text>
+  <text x="120" y="270" fill="#4ae5bb" font-family="monospace" font-size="18">[ ok ] defensive practice</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
+  <rect width="800" height="420" fill="#0a1923"/>
+  <text x="28" y="36" fill="#4ae5bb" font-family="monospace" font-size="14">DEFENCE_LAYER // 01</text>
+  <line x1="120" y1="210" x2="680" y2="210" stroke="#4ae5bb" stroke-opacity=".45"/>
+  <circle cx="180" cy="210" r="38" fill="#0b202a" stroke="#4ae5bb"/><text x="180" y="216" text-anchor="middle" fill="#4ae5bb" font-family="monospace" font-size="14">WAN</text>
+  <circle cx="400" cy="210" r="38" fill="#12342f" stroke="#4ae5bb"/><text x="400" y="216" text-anchor="middle" fill="#4ae5bb" font-family="monospace" font-size="14">FW</text>
+  <circle cx="620" cy="210" r="38" fill="#0b202a" stroke="#4ae5bb"/><text x="620" y="216" text-anchor="middle" fill="#4ae5bb" font-family="monospace" font-size="14">LAN</text>
+</svg>

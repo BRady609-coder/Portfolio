@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+  <rect width="640" height="640" fill="#07111a"/>
+  <circle cx="320" cy="250" r="110" fill="#0d2430" stroke="#4ae5bb" stroke-width="6"/>
+  <path d="M160 560c24-140 96-200 160-200s136 60 160 200" fill="#0d2430" stroke="#4ae5bb" stroke-width="6"/>
+  <text x="320" y="268" text-anchor="middle" fill="#4ae5bb" font-family="monospace" font-size="54" font-weight="700">BW</text>
+  <rect x="120" y="575" width="400" height="40" fill="#041018" stroke="#4ae5bb"/>
+  <text x="320" y="602" text-anchor="middle" fill="#4ae5bb" font-family="monospace" font-size="18">REPLACE WITH YOUR PHOTO</text>
+</svg>
