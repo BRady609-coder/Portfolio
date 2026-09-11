@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Brady Watts — cybersecurity student portfolio. Explore projects, learning interests, and technical skills.">
+  <meta name="theme-color" content="#07111a">
+  <title>Brady Watts | Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="page-grid" aria-hidden="true"></div>
+  <div class="ambient-glow glow-one" aria-hidden="true"></div>
+  <div class="ambient-glow glow-two" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Brady Watts home">
+        <span class="brand-mark" aria-hidden="true">BW</span>
+        <span>brady<span class="text-mint">.sec</span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="nav-contact"></a>>Let's connect <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="system-status"><span class="status-dot" aria-hidden="true"></span> SYSTEM ONLINE</div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero shell" id="home">
+      <div class="hero-copy reveal">
+        <p class="terminal-label"><span class="prompt-green">brady@portfolio:~$</span> ./launch_portfolio.sh</p>
+        <h1>Defending systems.<br><span>Building what's next.</span></h1>
+        <p class="hero-description">
+          I'm Brady Watts, a Cybersecurity student at ICMS with a growing focus on network security, practical problem-solving, and building a stronger understanding of how digital systems can be protected.
+        </p>
+        <img
+  src="images/profile.jpg"
+  alt="Professional photograph of Brady Watts"
+  class="profile-photo">
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore project files <span aria-hidden="true">↗</span></a>
+          <button class="button button-ghost" type="button" data-command="whoami">Run <span class="mono">whoami</span></button>
+        </div>
+        <div class="hero-meta" aria-label="Portfolio summary">
+          <div><span class="meta-number">01</span><span>Cybersecurity<br>student</span></div>
+          <div><span class="meta-number">02</span><span>Network security<br>focus</span></div>
+          <div><span class="meta-number">03</span><span>Sydney,<br>Australia</span></div>
+        </div>
+      </div>
+<div id="skillsCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="p-4">
+        <h3>Network Security</h3>
+        <p>Firewalls, network configuration, and threat awareness.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="p-4">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, JavaScript, and responsive design.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="p-4">
+        <h3>Career Goal</h3>
+        <p>Working towards becoming a Cybersecurity Analyst.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#skillsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#skillsCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<div class="accordion" id="hobbiesAccordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#hobby1">
+        Programming
+      </button>
+    </h2>
+    <div id="hobby1" class="accordion-collapse collapse show" data-bs-parent="#hobbiesAccordion">
+      <div class="accordion-body">
+        I enjoy programming with C++ and JavaScript, learning through trial and error.
+      </div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#hobby2">
+        Cyber Home Lab
+      </button>
+    </h2>
+    <div id="hobby2" class="accordion-collapse collapse" data-bs-parent="#hobbiesAccordion">
+      <div class="accordion-body">
+        I run a self-taught home cyber lab to practise defending against simulated threats.
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="terminal-window reveal" id="terminalWindow">
+        <div class="terminal-topbar">
+          <div class="window-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <span class="terminal-path">/home/brady/portfolio</span>
+          <span class="terminal-lock" aria-label="Secure interface">◇ secure</span>
+        </div>
+        <div class="terminal-output" id="terminalOutput" role="log" aria-live="polite" aria-label="Interactive terminal output"></div>
+        <form class="terminal-form" id="terminalForm">
+          <label class="sr-only" for="terminalInput">Type a terminal command</label>
+          <span class="terminal-prompt" aria-hidden="true">$</span>
+          <input id="terminalInput" type="text" autocomplete="off" spellcheck="false" placeholder="type help to begin...">
+        </form>
+        <div class="terminal-suggestions" aria-label="Terminal command shortcuts">
+          <button type="button" data-command="help">help</button>
+          <button type="button" data-command="skills">skills</button>
+          <button type="button" data-command="projects">projects</button>
+          <button type="button" data-command="contact">contact</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="signal-strip shell" aria-label="Areas of interest">
+      <span>NETWORK DEFENSE</span><i aria-hidden="true"></i>
+      <span>THREAT AWARENESS</span><i aria-hidden="true"></i>
+      <span>WEB TECHNOLOGY</span><i aria-hidden="true"></i>
+      <span>CONTINUOUS LEARNING</span>
+    </div>
+
+    <section class="section shell" id="projects">
+      <div class="section-heading reveal">
+        <p class="section-kicker"><span>01</span> / PROJECT FILES</p>
+        <div class="heading-row">
+          <h2>Things I'm building<br><em>&amp; learning.</em></h2>
+          <p>These are learning-focused projects and areas of practice. Each file represents a skill I am developing through study, experimentation, and reflection.</p>
+        </div>
+      </div>
+
+      <div class="filter-row reveal" role="group" aria-label="Filter project files">
+        <span class="filter-label">filter:</span>
+        <button class="filter-button active" type="button" data-filter="all">all <span>04</span></button>
+        <button class="filter-button" type="button" data-filter="network">network <span>02</span></button>
+        <button class="filter-button" type="button" data-filter="development">development <span>02</span></button>
+      </div>
+      <div class="container">
+      <div class="row g-4" id="projectGrid">
+          <div class="col-12 col-md-6 col-lg-4">
+        <article class="project-card reveal" data-category="network">
+          <div class="project-visual visual-network" aria-hidden="true">
+            <span class="visual-caption">DEFENCE_LAYER // 01</span>
+            <div class="network-visual-lines"><span></span><span></span><span></span><span></span></div>
+            <div class="visual-node node-a">WAN</div><div class="visual-node node-b">FW</div><div class="visual-node node-c">LAN</div>
+          </div>
+          
+          <div class="project-card-body">
+            <div class="project-card-top"><span class="file-type">NET</span><span class="project-status status-learning"><i></i> learning</span></div>
+            <h3>Network Security Foundations</h3>
+            <p>Exploring firewall principles, secure network configuration, and basic threat-detection concepts as part of my cybersecurity studies.</p>
+            <div class="tag-row"><span>Firewalls</span><span>Defence</span><span>Networking</span></div>
+            <button class="project-open" type="button" data-project="network-security">open file <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+          
+        <article class="project-card reveal" data-category="network">
+          <div class="project-visual visual-lab" aria-hidden="true">
+            <span class="visual-caption">HOME_LAB // 02</span>
+            <div class="lab-screen"><span>$ monitor --lab</span><span class="green-line">[ ok ] isolated environment</span><span>[ .. ] analysing events</span><span class="green-line">[ ok ] defensive practice</span></div>
+           </div>
+          <div class="project-card-body">
+            <div class="project-card-top"><span class="file-type">LAB</span><span class="project-status status-progress"><i></i> in progress</span></div>
+            <h3>Cyber Home Lab</h3>
+            <p>A self-directed environment for practising security concepts in a controlled way, including threat simulation and defensive-response thinking.</p>
+            <div class="tag-row"><span>Labs</span><span>Analysis</span><span>Practice</span></div>
+            <button class="project-open" type="button" data-project="home-lab">open file <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+         
+        <article class="project-card reveal" data-category="development">
+          <div class="project-visual visual-web" aria-hidden="true">
+            <span class="visual-caption">INTERFACE // 03</span>
+            <div class="browser-frame"><div class="browser-bar"><i></i><i></i><i></i></div><div class="browser-content"><span></span><span></span><span></span><b></b></div></div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top"><span class="file-type">WEB</span><span class="project-status status-complete"><i></i> complete</span></div>
+            <h3>Interactive Portfolio Interface</h3>
+            <p>A responsive one-page site built with semantic HTML, CSS, and JavaScript, with a focus on accessible interaction and visual communication.</p>
+            <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <button class="project-open" type="button" data-project="portfolio">open file <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+         
+        <article class="project-card reveal" data-category="development">
+          <div class="project-visual visual-code" aria-hidden="true">
+            <span class="visual-caption">CODE_NOTES // 04</span>
+            <pre><span class="code-purple">for</span> (skill : skills) {
+  <span class="code-blue">learn</span>(skill);
+  <span class="code-green">debug</span>();
+}</pre>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top"><span class="file-type">CODE</span><span class="project-status status-progress"><i></i> ongoing</span></div>
+            <h3>Programming Practice</h3>
+            <p>Small C++ and JavaScript exercises used to build programming logic, debugging skills, and confidence with problem-solving.</p>
+            <div class="tag-row"><span>C++</span><span>JavaScript</span><span>Logic</span></div>
+            <button class="project-open" type="button" data-project="programming">open file <span aria-hidden="true">↗</span></button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="lab-section section shell" id="lab">
+      <div class="section-heading reveal">
+        <p class="section-kicker"><span>02</span> / INTERACTIVE LAB</p>
+        <div class="heading-row">
+          <h2>Click through<br><em>the network.</em></h2>
+          <p>An educational visual model of a protected traffic path. Select a node to see its role in the system.</p>
+        </div>
+      </div>
+      <div class="lab-layout reveal">
+        <div class="network-map" aria-label="Interactive network diagram">
+          <div class="map-line line-one" aria-hidden="true"></div><div class="map-line line-two" aria-hidden="true"></div><div class="map-line line-three" aria-hidden="true"></div>
+          <button class="network-node active" type="button" data-node="internet" aria-pressed="true"><span class="node-symbol">◎</span><strong>Internet</strong><small>external traffic</small></button>
+          <button class="network-node" type="button" data-node="firewall" aria-pressed="false"><span class="node-symbol">▣</span><strong>Firewall</strong><small>filter &amp; inspect</small></button>
+          <button class="network-node" type="button" data-node="server" aria-pressed="false"><span class="node-symbol">▤</span><strong>Web server</strong><small>protected service</small></button>
+          <button class="network-node" type="button" data-node="logs" aria-pressed="false"><span class="node-symbol">≋</span><strong>Security logs</strong><small>observe events</small></button>
+        </div>
+        <div class="node-panel" id="nodePanel" aria-live="polite">
+          <p class="panel-kicker">NODE // INTERNET</p>
+          <h3>Public traffic</h3>
+          <p>This is the external side of the system. Traffic enters from untrusted networks and should be treated carefully before it reaches an internal service.</p>
+          <div class="panel-data"><span>signal</span><strong>MONITORED</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-heading reveal">
+        <p class="section-kicker"><span>03</span> / PROFILE.JSON</p>
+        <div class="heading-row">
+          <h2>Curious by nature.<br><em>Analytical by habit.</em></h2>
+          <p>Cybersecurity is a constant learning process. I am building my foundation one concept, lab, and solved problem at a time.</p>
+        </div>
+      </div>
+      <div class="about-grid">
+        <div class="code-profile reveal">
+          <div class="code-header"><span>profile.json</span><span>read-only</span></div>
+          <pre><span class="code-brace">{</span>
+  <span class="code-key">"name"</span>: <span class="code-string">"Brady Watts"</span>,
+  <span class="code-key">"role"</span>: <span class="code-string">"Cybersecurity student"</span>,
+  <span class="code-key">"focus"</span>: <span class="code-string">"Network security"</span>,
+  <span class="code-key">"goal"</span>: <span class="code-string">"Cybersecurity analyst"</span>,
+  <span class="code-key">"mindset"</span>: <span class="code-string">"learn, test, improve"</span>
+<span class="code-brace">}</span></pre>
+        </div>
+        <div class="skills-panel reveal">
+          <p class="panel-kicker">CURRENT STACK</p>
+          <div class="skill-group"><div><span>Network security fundamentals</span><span class="skill-level">developing</span></div><div class="skill-track"><span style="width: 62%"></span></div></div>
+          <div class="skill-group"><div><span>HTML / CSS / responsive design</span><span class="skill-level">developing</span></div><div class="skill-track"><span style="width: 72%"></span></div></div>
+          <div class="skill-group"><div><span>JavaScript / programming logic</span><span class="skill-level">developing</span></div><div class="skill-track"><span style="width: 55%"></span></div></div>
+          <div class="skill-group"><div><span>Problem-solving &amp; teamwork</span><span class="skill-level">strength</span></div><div class="skill-track"><span style="width: 78%"></span></div></div>
+          <p class="skills-note"><span class="prompt-green">$</span> Progress is a process, not a fixed score.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section section shell" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <p class="section-kicker"><span>04</span> / CONTACT</p>
+          <h2>Have a signal?<br><em>Send it my way.</em></h2>
+          <p>I'm always interested in learning from people working with technology, security, and digital systems.</p>
+          <a class="email-link" href="mailto:bwatts26@students.icms.edu.au">bwatts26@students.icms.edu.au <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="social-links">
+  <a
+    class="social-link"
+    href="https://github.com/BRady609-coder"
+    target="_blank"
+    rel="noopener noreferrer">
+    GitHub <span aria-hidden="true">↗</span>
+  </a>
+
+  <a
+    class="social-link"
+    href="https://www.linkedin.com/in/brady-watts-739b74410"
+    target="_blank"
+    rel="noopener noreferrer">
+    LinkedIn <span aria-hidden="true">↗</span>
+  </a>
+</div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="field"><label for="visitorName">Your name</label><input id="visitorName" name="name" type="text" autocomplete="name" required><span class="field-error">Please enter your name.</span></div>
+            <div class="field"><label for="visitorEmail">Your email</label><input id="visitorEmail" name="email" type="email" autocomplete="email" required><span class="field-error">Please enter a valid email.</span></div>
+          </div>
+          <div class="field"><label for="visitorMessage">Message</label><textarea id="visitorMessage" name="message" rows="4" required></textarea><span class="field-error">Please enter a message.</span></div>
+          <button class="button button-primary" type="submit">Validate message <span aria-hidden="true">↗</span></button>
+          <p class="form-note"><span aria-hidden="true">i</span> This portfolio form validates locally. Connect a form service or backend before using it to transmit messages.</p>
+          <p class="form-message" id="formMessage" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer shell">
+    <span>© 2026 Brady Watts</span>
+    <span class="footer-command"><span class="prompt-green">brady@portfolio:~$</span> exit <span class="cursor" aria-hidden="true"></span></span>
+    <span>Built with HTML / CSS / JS</span>
+  </footer>
+
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inner">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close project details">×</button>
+      <div id="dialogContent"></div>
+    </div>
+  </dialog>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
