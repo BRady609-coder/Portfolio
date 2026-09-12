@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420">
-  <rect width="800" height="420" fill="#0a1923"/>
-  <text x="28" y="36" fill="#c49bff" font-family="monospace" font-size="14">CODE_NOTES // 04</text>
-  <text x="90" y="160" fill="#c49bff" font-family="monospace" font-size="28">for (skill : skills) {</text>
-  <text x="130" y="220" fill="#80a9ff" font-family="monospace" font-size="28">learn(skill);</text>
-  <text x="130" y="270" fill="#4ae5bb" font-family="monospace" font-size="28">debug();</text>
-  <text x="90" y="330" fill="#c49bff" font-family="monospace" font-size="28">}</text>
-</svg>
