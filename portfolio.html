@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Brady Watts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top site-header">
+    <div class="container">
+      <a class="navbar-brand brand" href="index.html">
+        <span class="brand-mark">BW</span> brady.sec
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio / Subjects</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="kicker">02 / PORTFOLIO</p>
+        <h1>Project <span>files.</span></h1>
+        <p class="lead-muted">Current subjects and practical projects in a Bootstrap card grid. Hover a card for the zoom interaction.</p>
+        <div class="filter-bar">
+          <button class="filter-button active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="security">Cybersecurity</button>
+          <button class="filter-button" type="button" data-filter="web">Web</button>
+          <button class="filter-button" type="button" data-filter="programming">Programming</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="row g-4" id="projectGrid">
+          <div class="col-12 col-md-6 col-lg-4 project-col" data-category="security">
+            <article class="project-card">
+              <span class="project-status">IN PROGRESS</span>
+              <p class="kicker">Subject / Cybersecurity</p>
+              <h3>Network Security Foundations</h3>
+              <p>Learning how traffic moves through a network, why firewalls sit at the boundary, and how untrusted internet traffic should be inspected before it reaches internal systems.</p>
+              <div class="project-tags"><span>Network security</span><span>Firewalls</span><span>Defence</span></div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 project-col" data-category="security">
+            <article class="project-card">
+              <span class="project-status">IN PROGRESS</span>
+              <p class="kicker">Project / Lab</p>
+              <h3>Cyber Home Lab</h3>
+              <p>A self-taught lab used to practise basic defensive ideas: network layout, monitoring, and reviewing simulated threats in a controlled environment.</p>
+              <div class="project-tags"><span>Home lab</span><span>Monitoring</span><span>Logs</span></div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 project-col" data-category="web">
+            <article class="project-card">
+              <span class="project-status complete">CURRENT</span>
+              <p class="kicker">ICT202A / Web</p>
+              <h3>Interactive Portfolio Website</h3>
+              <p>This website. Built with HTML, CSS, JavaScript and Bootstrap to present study, projects and contact details in a responsive three-page layout.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>Bootstrap</span></div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 project-col" data-category="programming">
+            <article class="project-card">
+              <span class="project-status">IN PROGRESS</span>
+              <p class="kicker">Practice / Code</p>
+              <h3>Programming Practice</h3>
+              <p>Ongoing practice with C++ and JavaScript. I learn by writing small programs, testing them, and fixing errors as they appear.</p>
+              <div class="project-tags"><span>C++</span><span>JavaScript</span><span>Problem solving</span></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <p class="kicker">03 / NETWORK LAB</p>
+        <h2 class="mb-2">Click through the network</h2>
+        <p class="lead-muted mb-4">Select a component to see its role in a basic defensive network.</p>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-lg-7">
+            <div class="network-map" aria-label="Interactive network diagram">
+              <button class="network-node active" type="button" data-node="internet">Internet<small>untrusted</small></button>
+              <button class="network-node" type="button" data-node="firewall">Firewall<small>filter</small></button>
+              <button class="network-node" type="button" data-node="server">Web server<small>service</small></button>
+              <button class="network-node" type="button" data-node="logs">Security logs<small>observe</small></button>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="node-panel">
+              <p class="kicker">COMPONENT</p>
+              <h3 id="nodeTitle">Internet</h3>
+              <p id="nodeText" class="lead-muted mb-0">External traffic from untrusted networks should be inspected before it reaches internal services.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-wrap justify-content-between gap-2">
+      <span>Brady Watts · ICMS Cybersecurity</span>
+      <span>&copy; <span id="currentYear">2026</span> Brady Watts</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">↑</button>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

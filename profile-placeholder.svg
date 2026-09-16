@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="440" viewBox="0 0 440 440" role="img" aria-label="Profile placeholder">
+  <rect width="440" height="440" fill="#0b1f2b"/>
+  <circle cx="220" cy="168" r="70" fill="#4ae5bb"/>
+  <ellipse cx="220" cy="340" rx="120" ry="90" fill="#4ae5bb"/>
+  <text x="220" y="420" text-anchor="middle" fill="#91aab5" font-family="monospace" font-size="16">Replace with profile.jpg</text>
+</svg>
